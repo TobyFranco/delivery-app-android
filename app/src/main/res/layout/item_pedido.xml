@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/surface_dark"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:contentPadding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPedidoImagen"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:background="@color/image_background"
+            android:contentDescription="Imagen del pedido"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/tvNombreCliente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/ivPedidoImagen"
+            app:layout_constraintTop_toTopOf="@id/ivPedidoImagen"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Juan Pérez" />
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:maxLines="1"
+            app:layout_constraintStart_toStartOf="@id/tvNombreCliente"
+            app:layout_constraintTop_toBottomOf="@id/tvNombreCliente"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="📞 0981-234567" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="@id/tvNombreCliente"
+            app:layout_constraintTop_toBottomOf="@id/tvTelefono"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Pizza grande con extra queso y bebida" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivPedidoImagen" />
+
+        <TextView
+            android:id="@+id/tvMonto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            tools:text="₲ 85.000" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:chipBackgroundColor="@color/chip_pendiente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMonto"
+            tools:text="Pendiente" />
+
+        <ImageView
+            android:id="@+id/ivSincronizado"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Estado de sincronización"
+            android:src="@android:drawable/stat_notify_sync"
+            android:visibility="gone"
+            app:tint="@color/sync_pending"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/chipEstado"
+            app:layout_constraintBottom_toBottomOf="@id/chipEstado"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
