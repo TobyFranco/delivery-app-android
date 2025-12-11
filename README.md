@@ -19,8 +19,8 @@ Aplicación Android para gestión de pedidos de delivery con arquitectura MVVM, 
 
 ## 📱 Capturas de Pantalla
 
-(screenshots/Imagen de WhatsApp 2025-12-10 a las 19.43.29_8dabd80d.jpg)
-![img.png](img.png)
+![Pantalla Principal](screenshots/Imagen%20de%20WhatsApp%202025-12-10%20a%20las%2019.43.29_8dabd80d.jpg)
+
 
 ## 🏗️ Arquitectura del Proyecto
 
