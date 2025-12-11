@@ -26,7 +26,7 @@ Aplicación Android para gestión de pedidos de delivery con arquitectura MVVM, 
 ![Pantalla Principal](screenshots/Imagen%20de%20WhatsApp%202025-12-10%20a%20las%2019.43.29_bd21e54d.jpg)
 
 ## Ejemplo de Formulario 
-[Formulario ejemplo](screenshots/Imagen%20de%20WhatsApp%202025-12-10%20a%20las%2019.43.29_ee6123d8.jpg)
+![Formulario ejemplo](screenshots/Imagen%20de%20WhatsApp%202025-12-10%20a%20las%2019.43.29_ee6123d8.jpg)
 
 ## Pantalla principal con multiples pedidos
 ![Pantalla Principal con multiples pedidos](screenshots/Imagen%20de%20WhatsApp%202025-12-10%20a%20las%2019.43.30_9eb799ca.jpg)
